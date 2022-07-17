@@ -1,0 +1,24 @@
+{
+    "UK": [
+        {
+            "name": "Aditya",
+            "address" : "221 Baker Street, London",
+            "country" : "UK",
+            "phone":5454543412
+        },
+        {
+            "name": "Akash",
+            "address" : "345, R N World, London",
+            "country" : "UK",
+            "phone":5454543412
+        }
+    ],
+    "France" : [
+        {
+            "name": "Richa",
+            "address" : "225 Faker Street, Paris",
+            "country" : "France",
+            "phone":5454543412
+        }
+    ]
+}
