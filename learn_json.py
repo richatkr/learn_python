@@ -7,13 +7,13 @@
 address_book={}
 address_book["Tom"]={
     "name":"Tom",
-    "address" : "1 red Street, newyork",
+    "address" : "1 red Street, Newyork",
     "phone":5454543412
 }
 
 address_book["Joe"]={
     "name":"Joe",
-    "address" : "2 red Street, newyork",
+    "address" : "2 red Street, Newyork",
     "phone":5876453419
 }
 
@@ -22,6 +22,24 @@ address_book["Joe"]={
 import json
 s=json.dumps(address_book)
 print(s);
+
+with open("/Users/richa/Desktop/python/address_book.txt","w") as f:
+    f.write(s)
+
+f=open("/Users/richa/Desktop/python/address_book.txt","r")
+s=f.read()
+print(s)
+
+book=json.loads(s)
+
+print(type(book))
+
+print(book['Tom'])
+print(book['Tom']['phone'])
+
+for person in book:
+    print(book[person]['name']," lives at ",book[person]['address'])
+
 
 
 
