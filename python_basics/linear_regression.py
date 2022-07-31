@@ -1,10 +1,6 @@
-from unicodedata import name
-import pandas as pd
 import numpy as np
 def gradient_descent(x,y):
     m_curr = b_curr = 0
-    x_diff = 0
-    y_diff = 0
     learning_rate = 0.0001 
     iteration = 1000
     x= np.array([1,2,3,4,5])
