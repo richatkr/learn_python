@@ -6,9 +6,11 @@ point=(5,6)
 # to get a element from the tuple
 print(point[0], point[1]) 
 
-# other example of tuple is address , here two elements are String and one is Number, we cannot store different types of element in one list but in tuples it is possible
+# other example of tuple is address , here two elements are String and one is Number, 
+# we cannot store different types of element in one list but in tuples it is possible
 
 address=("Near Brilliant Academy","Ranipur","Darbhanga",846005)
 print(address)
 
-# Last points about the tuples is tuples are immutable, you cannot change values of tuple but Lists are muttable, you can change amy elements of list
+# Last points about the tuples is tuples are immutable, you cannot change values of tuple 
+# but Lists are muttable, you can change amy elements of list
