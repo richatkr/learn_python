@@ -1,4 +1,5 @@
-import pandas ad pd
+from unicodedata import name
+import pandas as pd
 import numpy as np
 def gradient_descent(x,y):
     m_curr = b_curr = 0
@@ -14,8 +15,10 @@ def gradient_descent(x,y):
         m_derivative = -(2/n)*sum(x*(y+y_predict))
         b_derivative = -(2/n)*sum(y+y_predict)
 
-        m_curr = m_curr - learning_rate * m_derivative;
-        b_curr = b_curr - learning_rate * b_derivative;
+        m_curr = m_curr - learning_rate * m_derivative
+        b_curr = b_curr - learning_rate * b_derivative
 
         print('m{}, b{}, iteration{} '.format(m_curr,b_curr,i))
-    print(x)
+        
+if(__name__ == "__main__"):
+    gradient_descent(0,0)
